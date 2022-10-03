@@ -1,22 +1,101 @@
 <!DOCTYPE html>
-<html>
+<!<!-- Se actualiza la pagina index para que contenga nuevas etiquetas meta y demas etiqueta para la semantica del boddy  -->
+<html lang="es">
     <head>
         <title>Tienda en linea</title>
         <meta charset="UTF-8">
+        <meta name="description" content="Esta pagina contiene etiquetas del tipo html5 y luego enlaces o definicion de estilos css">
+        <meta name="keywords" content="html5, css3, web, fideltas">
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+
     </head>
     <body>
-        <div>
-            <h1 style="text-align: center">Home</h1>
-            <p>Bienvenidos a la página de la Tienda en línea</p>
-        </div>
+        <header id="encabezado"> <!<!-- Etiqueta para ofrecerle al browser info de que es un encabezado -->
+            <h1>TechShop</h1>
+        </header>
+        <nav id="menu"> <!<!-- Para indicar menu -->
+            <a href="ejemplo9.html">Back</a>
+            <a href="index.html">Home</a>
+            <a href="ejemplo2.html">Next</a>
+        </nav>
 
-        <p style="text-align: left">Lorem ipsum dolor sit amet consectetur adipiscing, elit nisi bibendum ad accumsan, ante ac justo arcu mollis. Nisl porttitor ultricies laoreet convallis sociis per conubia parturient eros, at blandit felis curae praesent fusce lobortis massa mus, ut nulla sem nullam condimentum habitant euismod dictum. Sagittis pellentesque augue eget tempus phasellus malesuada scelerisque suscipit magnis nulla, lectus viverra elementum nisl ligula lacus odio curabitur.</p>
-        <p style="text-align: right">Morbi ultrices velit scelerisque sed sociis tortor aenean, suspendisse nisl fames fusce pharetra varius ad, urna erat conubia id quisque ut.</p>
-        <p style="text-align: center">Primis sollicitudin consequat bibendum vitae odio cursus interdum a tristique fermentum fames laoreet mus metus, fusce class ut et varius penatibus erat potenti himenaeos sagittis arcu praesent sapien..</p>
+        <aside id="barralateral"> <!<!-- Indica barra lateral -->
+            <h2>Productos mas vendidos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ut velit pretium tempor, non ultrices taciti odio tortor mollis posuere mattis ornare. Etiam lacus cras auctor pharetra suspendisse curae eu molestie, fusce sed volutpat odio tempor neque. Est nisi gravida justo aliquam eleifend urna nostra nibh augue netus, fusce venenatis consequat viverra libero velit orci volutpat.</p>
+        </aside>
 
-        <br>
-        <br>
-        
-        <p>Ultima linea</p>
+        <section id="contenido">
+            <h2>Articulos principales</h2>
+            <article>
+                <header>Portatil XRT 5000</header>                
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit nisi bibendum ad accumsan, ante ac justo arcu mollis. Nisl porttitor ultricies laoreet convallis sociis per conubia parturient eros, at blandit felis curae praesent fusce lobortis massa mus, ut nulla sem nullam condimentum habitant euismod dictum. Sagittis pellentesque augue eget tempus phasellus malesuada scelerisque suscipit magnis nulla, lectus viverra elementum nisl ligula lacus odio curabitur.</p>
+                <footer>Agregar al carrito</footer>
+                <figure>
+                    <img src="images/equipo1.jpg" alt="Desktop XRT"/>
+                </figure>
+            </article>
+            <article>
+                <header>Alienware ATD 9000</header>     
+                <p> Esta inspirada en la pelicula <cite>Aliens el octavo pasajero</cite> Morbi ultrices velit scelerisque sed sociis tortor aenean, suspendisse nisl fames fusce pharetra varius ad, urna erat conubia id quisque ut.</p>
+                <footer>Agregar al carrito</footer>
+                <figure>
+                    <img src="images/equipo2.jpg" alt="Alienware"/>
+                    <figcaption>Mas vendido</figcaption>
+                </figure>
+            </article>
+            <article>
+                <header>Impresora 3D Portable</header>   
+
+                <p>Primis sollicitudin consequat bibendum vitae odio cursus interdum a tristique fermentum fames laoreet mus metus, fusce class ut et varius penatibus erat potenti himenaeos sagittis arcu praesent sapien..</p>
+                <footer>Agregar al carrito</footer>
+                <figure>
+                    <img src="images/equipo3.jpg" alt="3d print" width="600"/>
+                    <figcaption>Mas economica</figcaption>
+                </figure>
+            </article>
+            <article>
+                <header>Resumen de lineas generales</header>   
+
+                <p>interdum a tristique fermentum fames laoreet mus metus, fusce class ut et varius penatibus erat potenti himenaeos sagittis arcu praesent sapien..</p>
+                <table border="0">
+                    <thead>
+                        <tr id="encabezadoTabla">
+                            <th>Codigo</th>
+                            <th>Detalle</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaresumen">
+                        <tr>
+                            <td>1</td>
+                            <td>Primis sollicitudin consequat bibendum vitae odio cursus </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>interdum a tristique fermentum fames laoreet mus metus</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Primis sollicitudin consequat bibendum vitae odio cursus </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>interdum a tristique fermentum fames laoreet mus metus</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Primis sollicitudin consequat bibendum vitae odio cursus </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>interdum a tristique fermentum fames laoreet mus metus</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </article>
+        </section>
+
+        <footer id="piepagina">Derechos reservados &COPY; 2022 <address style="display: inline">Tel 8888 8888</address></footer>
+
     </body>
 </html>
